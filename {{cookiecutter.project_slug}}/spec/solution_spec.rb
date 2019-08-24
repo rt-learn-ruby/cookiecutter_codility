@@ -7,9 +7,19 @@ require './solution'
 
 describe 'solution' do
   context 'When testing the solution' do
-    it 'should return something' do
-      message = solution(['1'], 2)
-      expect(message).to eq 'output ["1"] 2'
+    inputs = [
+      []
+    ]
+
+    expecteds = []
+
+    inputs.each_with_index do |input, index|
+      describe "given #{input}" do
+        it "returns #{expecteds[index]}" do
+          result = solution(*input)
+          expect(result).to eq expecteds[index]
+        end
+      end
     end
   end
 end
