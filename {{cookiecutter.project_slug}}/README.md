@@ -1,6 +1,6 @@
 # Overview
 
-Template for ruby script
+{{cookiecutter.project_short_description}}
 
 ## Prerequisite
 
